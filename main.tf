@@ -10,8 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  # Configure your AWS region here or via AWS_REGION environment variable
-  # region = "us-east-1"
+  region = var.aws_region
 }
 
 resource "aws_instance" "this" {

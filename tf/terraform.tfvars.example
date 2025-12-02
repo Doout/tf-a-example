@@ -1,0 +1,11 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and fill in your values
+
+# Required variables
+ssh_key_name  = "your-ssh-key-name"
+instance_name = "my-ec2-instance"
+subnet_id     = "subnet-xxxxxxxxxxxxxxxxx"
+
+# Optional variables (uncomment to override defaults)
+# instance_type = "t2.micro"
+# ami_id        = "ami-0c55b159cbfafe1f0"

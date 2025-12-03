@@ -1,0 +1,14 @@
+---
+- name: Update all packages on Linux hosts
+  hosts: all
+  become: yes
+ 
+  tasks:
+    - name: Update installed packages
+      package:
+        name: "*"
+        state: latest
+ 
+    - name: Refresh package cache (if supported)
+      package:
+        update_cache: yes
